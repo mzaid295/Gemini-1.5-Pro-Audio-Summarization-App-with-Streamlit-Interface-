@@ -1,5 +1,5 @@
 import streamlit as st
-# from pydub import AudioSegment
+from pydub import AudioSegment
 import tempfile
 import os
 import google.generativeai as genai
@@ -47,12 +47,15 @@ audio_file = st.file_uploader("Upload Audio File", type=['wav', 'mp3'])
 if audio_file is not None:
     audio_path = save_uploaded_file(audio_file)  # Save the uploaded file and get the path
     st.audio(audio_path)
-# Footer
-st.markdown('---')
-st.write("Developed by [Muhammad Zaid Linkedin](https://www.linkedin.com/in/muhammad-zaid1) | [Muhammad Zaid GitHub](https://github.com/mzaid295)")
-
 
     if st.button('Summarize Audio'):
         with st.spinner('Summarizing...'):
             summary_text = summarize_audio(audio_path)
             st.info(summary_text)
+# Footer
+st.markdown('---')
+st.write("Developed by [Muhammad Zaid Linkedin](https://www.linkedin.com/in/muhammad-zaid1) | [Muhammad Zaid GitHub](https://github.com/mzaid295)")
+
+
+
+
