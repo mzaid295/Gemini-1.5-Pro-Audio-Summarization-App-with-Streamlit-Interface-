@@ -26,8 +26,11 @@ This project demonstrates the integration of Gemini 1.5 Pro for audio summarizat
 4. After a brief processing period, the summarized text will be displayed below the audio player.
 
 ## Credits
-This project utilizes Google's Generative AI framework for audio summarization. Streamlit is employed for the user interface.
+- Muhammad Zaid: Lead Developer
+  - LinkedIn: [Muhammad Zaid](https://www.linkedin.com/in/muhammad-zaid1)
+  - GitHub: [muhammad-zaid](https://github.com/mzaid295)
 
 ## Contributions
 Contributions to enhance the functionality or user experience of this application are welcome. Please feel free to submit pull requests or raise issues in the repository.
+
 
